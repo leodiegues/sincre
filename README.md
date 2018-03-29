@@ -13,7 +13,7 @@ O script é elaborado em R e gera duas tabelas com os dados disponíveis dos ano
 
 As tabelas poderão ser encontradas nos seguintes links:
 
-Tabelas individuais: https://www.dropbox.com/sh/bwko9aayzwyc5yu/AADvb-EvILmQUu-9ZAgbOZXWa?dl=0
-Tabelas empilhadas: https://www.dropbox.com/sh/f4vp4np6ptd5dxa/AAB2VUn4oVOaF3ba2OxoA2G-a?dl=0
+- Tabelas individuais: https://www.dropbox.com/sh/bwko9aayzwyc5yu/AADvb-EvILmQUu-9ZAgbOZXWa?dl=0
+- Tabelas empilhadas: https://www.dropbox.com/sh/f4vp4np6ptd5dxa/AAB2VUn4oVOaF3ba2OxoA2G-a?dl=0
 
 Data da última atualização: **29/03/2018**
