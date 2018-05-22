@@ -15,13 +15,10 @@ request_url <- c(
 
 # Raspa os links das tabelas:
 get_page_links <- function(urls) {
-  
   xpath_a <- "//*[@id='k2Container']/div[2]/div/div[1]/div[4]/div/ul/li/a"
-  
   data <- data.frame(stringsAsFactors = F)
   
     purrr::map_df(urls, function (x) {
-      
       print(x)
       
       html <- httr::GET(x) %>%
@@ -59,33 +56,21 @@ page_links <- get_page_links(urls = request_url)
 
 # Baixa os arquivos dos links raspados:
 download <- function(data) {
-  
   if (!dir.exists("data")) {
-    
     dir.create("data")
-    
   } else {
-    
     cat('directory already exists\n')
-    
   }
   
   for (i in 1:nrow(data)) {
-    
     file_name <- data[i, 3]
-    
     file_path <- paste0('data/', file_name, '.txt')
-    
     print(paste0("downloading ", file_name, "..."))
     
     if (!file.exists(file_path)) {
-      
       download.file(data[i, 2], file_path)
-      
     } else {
-      
       print('file has already been downloaded')
-      
     }
     
   }
